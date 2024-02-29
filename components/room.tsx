@@ -17,7 +17,7 @@ export const Room = ({ children, roomId, fallback }: RoomProps) => {
   return (
     <RoomProvider
       id={roomId}
-      // WOKRING ON CURSOR
+      // WORKING ON CURSOR
       initialPresence={{
         cursor: null,
         selection: [],

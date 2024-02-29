@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../../../../public/RickyLogo.svg";
 import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -42,7 +43,7 @@ export const Info = ({ boardId }: InfoProps) => {
       <Hint label="Go to view all boards" side="bottom" sideOffset={10}>
         <Button asChild variant="board" className="px-2">
           <Link href="/">
-            <Image src="/logo.svg" alt="Logo" height={40} width={40} />
+            <Image src={logo} alt="Logo" height={40} width={40} />
             <span
               className={cn(
                 "font-semibold text-xl ml-2 text-black",
